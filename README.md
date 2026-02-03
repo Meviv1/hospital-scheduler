@@ -1,16 +1,39 @@
-# React + Vite
+Hospital Appointment Scheduler
+This is my project for Assignment 6. I built a simple web app that helps hospitals manage doctor bookings fairly without overworking the staff.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
 
-Currently, two official plugins are available:
+Add Doctors: Quickly register doctors with their specialty and daily patient limit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+Live List: See all doctors and their current workload in one table.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+Fair Booking: A "Book Now" feature that finds the best available doctor.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Alert System: A status panel that tells you if a booking worked or if doctors are full.
+
+When you book an appointment, the app does this:
+
+
+Filters for the specialty you need.
+
+
+Picks the doctor with the fewest current appointments.
+
+Example: If Dr. A has 2 patients and Dr. B has 0, the system automatically gives the next patient to Dr. B to keep things even.
+
+Used
+Vite + React
+
+JavaScript
+HTML
+CSS
+
+ How to Run this project in your local system
+Clone the repo.
+
+Run npm install to get the files.
+
+Run npm run dev to start the app.
